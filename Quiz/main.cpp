@@ -11,6 +11,11 @@ int main(int argc, char** argv) {
 	int r3;
 	int r4;
 	int r5;
+	int ctg; 
+	int ct;
+	
+	ctg = 0;
+	ct = 0;
 	
 	cout <<"Quiz sobre mitologia nordica. Responda escolhendo uma alternativa. \n";
 	cout <<"Quem é Fenrir na midotologia nordica: \n";
@@ -22,9 +27,12 @@ int main(int argc, char** argv) {
 	
 	if (r1 == 1){
 		cout <<"Acertou! \n";
+		ctg = ctg+1;
 	}
 	if (r1 != 1){
 		cout <<"Errou! A resposta é: 1- Um lobo Gigante. \n";
+		ct = ct+1;
+		
 	}
 	
 	cout <<"Quem mata Thor no Ragnarok?: \n";
@@ -35,9 +43,11 @@ int main(int argc, char** argv) {
 	cin >> r2;
 	if (r2 == 4){
 		cout <<"Acertou! \n";
+		ctg = ctg+1;
 	}
 	if (r2 != 4){
 		cout <<"Errou!A resposta é: 4- Jormmüngandr.  \n";
+		ct = ct+1;
 	}
 	
 	cout <<"Quais são os filhos bestiais de Loki? \n";
@@ -48,9 +58,11 @@ int main(int argc, char** argv) {
 	cin >> r3;
 	if (r3 == 3){
 		cout <<"Acertou! \n";
+		ctg = ctg+1;
 	}
 	if (r3 != 3){
 		cout <<"Errou!A resposta é: 3- Fennrir, Jormmüngandr e Hel. \n";
+		ct = ct+1;
 	}
 	
 	cout <<"Quem forjou o Mjolnir? \n";
@@ -61,9 +73,11 @@ int main(int argc, char** argv) {
 	cin >> r4;
 	if (r4 == 4){
 		cout <<"Acertou! \n";
+		ctg = ctg+1;
 	}
 	if (r4 != 4){
 		cout <<"Errou!A resposta é: 4- Os anões Brokk e Eitri.  \n";
+		ct = ct+1;
 	}
 	
 	cout <<"Jormmüngandr é? \n";
@@ -75,12 +89,14 @@ int main(int argc, char** argv) {
 
 if (r5 == 2){
 		cout <<"Acertou! \n";
+		ctg = ctg+1;
 	}
 	if (r5 != 2){
 		cout <<"Errou!A resposta é: 2- Uma cobra gigante. \n";
+		ct = ct+1;
 	}	
 	
-	cout <<"Fim de jogo!";
+	cout <<"Fim de jogo! Você acertou: "<< ctg<<" Questões. \n Você errou:"<< ct<<" Questões.";
 	
 	
 	return 0;
